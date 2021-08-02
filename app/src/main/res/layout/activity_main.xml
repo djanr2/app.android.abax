@@ -1,18 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/main_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:background="@color/purple_200"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
 
-</android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:stretchColumns="0,1">
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+
+                        android:text="Practica"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Tutoriales"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:text="Retos"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Logros"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:text="Información"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="SIMA LINK"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:text="Competición\nOnline"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Competición\nComputadora"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:text="Ajustes"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Login"
+                        android:textSize="@dimen/size_font_button">
+                    </Button>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@color/purple_700">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:stretchColumns="0,1,2,3">
+                <TableRow>
+                   
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
