@@ -21,6 +21,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo">
+
+                </ImageView>
+
             </LinearLayout>
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_height="wrap_content"
@@ -118,11 +125,54 @@
             android:background="@color/purple_700">
             <TableLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:stretchColumns="0,1,2,3">
+                android:layout_height="wrap_content">
                 <TableRow>
-                   
+                    <FrameLayout
+                        android:id="@+id/main_line_five_bid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:background="@android:color/holo_red_light">
+                        <ImageView
+                            android:id="@+id/main_five_bid"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/box_left"/>
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow>
+
+                </TableRow>
+
+                <TableRow>
+                    <FrameLayout
+                        android:id="@+id/main_line_bid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="240dp"
+                        android:background="@android:color/white">
+                        <ImageView
+                            android:id="@+id/main_one_bid"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/box_right"/>
+                        <ImageView
+                            android:id="@+id/main_two_bid"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/box_right"/>
+                        <ImageView
+                            android:id="@+id/main_three_bid"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/box_right"/>
+                        <ImageView
+                            android:id="@+id/main_four_bid"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:layout_below="@id/main_three_bid"
+                            android:src="@drawable/box_right"/>
+                    </FrameLayout>
                 </TableRow>
             </TableLayout>
         </LinearLayout>
