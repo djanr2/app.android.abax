@@ -8,7 +8,8 @@
         android:id="@+id/main_full_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,6 +30,7 @@
                 </ImageView>
 
             </LinearLayout>
+
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
@@ -123,58 +125,30 @@
             android:layout_height="match_parent"
             android:layout_weight="30"
             android:background="@color/purple_700">
-            <TableLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TableRow>
-                    <FrameLayout
-                        android:id="@+id/main_line_five_bid"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200">
+                <RelativeLayout
+                    android:layout_width="52dp"
+                    android:layout_height="300dp"
+                    android:background="@color/teal_200">
+                    <ImageView
+                        android:id="@+id/main_bid_five"
                         android:layout_width="wrap_content"
-                        android:layout_height="80dp"
-                        android:background="@android:color/holo_red_light">
-                        <ImageView
-                            android:id="@+id/main_five_bid"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/box_left"/>
-                    </FrameLayout>
-                </TableRow>
-
-                <TableRow>
-
-                </TableRow>
-
-                <TableRow>
-                    <FrameLayout
-                        android:id="@+id/main_line_bid"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/bid13_52px">
+                    </ImageView>
+                    <ImageView
+                        android:id="@+id/main_bid_sapace"
                         android:layout_width="wrap_content"
-                        android:layout_height="240dp"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:id="@+id/main_one_bid"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/box_right"/>
-                        <ImageView
-                            android:id="@+id/main_two_bid"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/box_right"/>
-                        <ImageView
-                            android:id="@+id/main_three_bid"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/box_right"/>
-                        <ImageView
-                            android:id="@+id/main_four_bid"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:gravity="center"
-                            android:layout_below="@id/main_three_bid"
-                            android:src="@drawable/box_right"/>
-                    </FrameLayout>
-                </TableRow>
-            </TableLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/bidspace15_60px">
+                    </ImageView>
+                </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
